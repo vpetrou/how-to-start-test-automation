@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LOGIN - NEGATIVE">
+	<parameter name="suite" value="true" />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	<test name="TC_UI_N_Login_001">
+		<classes>
+			<class name="com.intrasoft.stsc.test_cases.ts_ui_n_login.TC_UI_N_Login_001"></class>
+		</classes>
+	</test>
+</suite> 

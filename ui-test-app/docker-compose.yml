@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+  
+  uitest-app:
+    restart: unless-stopped
+    container_name: uitest-app
+    volumes:
+        - '/root/logs:/code/logs'
+    ports:
+      - "7101:8080"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mongo
+    networks:
+      uitest_net:
+  mongo:
+    image: mongo
+    container_name: uitest-mongo
+    restart: unless-stopped
+    volumes:
+        - '/root/data/db:/data/db'
+        - '/root/data/configdb:/data/configdb'
+    networks:
+      uitest_net:
+
+networks:
+  uitest_net:
+    driver: bridge

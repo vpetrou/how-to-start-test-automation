@@ -1,0 +1,1 @@
+java -jar ui-test-app-2.0.0.jar ts_ui

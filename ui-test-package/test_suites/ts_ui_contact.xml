@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CONTACTS">
+	<parameter name="suite" value="true" />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	<test name="TC_UI_Contact_001">
+		<classes>
+			<class name="com.intrasoft.stsc.test_cases.ts_ui_contact.TC_UI_Contact_001"></class>
+		</classes>
+	</test>
+	<test name="TC_UI_Contact_002">
+		<classes>
+			<class name="com.intrasoft.stsc.test_cases.ts_ui_contact.TC_UI_Contact_002"></class>
+		</classes>
+	</test>
+	<test name="TC_UI_Contact_003">
+		<classes>
+			<class name="com.intrasoft.stsc.test_cases.ts_ui_contact.TC_UI_Contact_003"></class>
+		</classes>
+	</test>
+	<test name="TC_UI_Contact_004">
+		<classes>
+			<class name="com.intrasoft.stsc.test_cases.ts_ui_contact.TC_UI_Contact_004"></class>
+		</classes>
+	</test>
+</suite> 
